@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC - EPN</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- open navbar -->
+
+    <header>
+        <a href="index.html" class="logo">e-Music Cloud</a>
+
+        <ul class="navbar">
+            <li><a href="epn.html" class="active">EPN</a></li>
+            <li><a href="discovery.html">eMusic Discovery</a></li>
+            <li><a href="library.html">my Library</a></li>
+            <li><a href="player.html">eM Player</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </header>
+
+    <!-- close navbar -->
+
+    <!-- open banner -->
+
+    <section class="epn-banner">
+        <h1>e-Music Producer Network (EPN)</h1>
+    </section>
+
+    <!-- close banner -->
+
+    <!-- open register and login form section -->
+
+    <section class="epn-forms">
+        <div class="form-container">
+            <div class="form-card">
+                <h2>Register as a Music Producer</h2>
+                <form>
+                    <label for="reg-name">Name:</label>
+                    <input type="text" id="reg-name" name="reg-name" required>
+    
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" name="reg-email" required>
+    
+                    <label for="reg-password">Password:</label>
+                    <input type="password" id="reg-password" name="reg-password" required>
+    
+                    <label for="reg-confirm-password">Confirm Password:</label>
+                    <input type="password" id="reg-confirm-password" name="reg-confirm-password" required>
+    
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <div class="form-card">
+                <h2>Login to your Dashboard</h2>
+                <form>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+    
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+    
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- close register and login form section -->
+
+    <!-- open dashboard -->
+
+    <section class="dashboard">
+        <div class="dashboard-content">
+            <div class="dashboard-left">
+                <h2>Dashboard</h2>
+                <div class="dashboard-upload-card">
+                    <h3>Upload Your Song</h3>
+                    <form>
+                        <label for="song-title">Song Title:</label>
+                        <input type="text" id="song-title" name="song-title" required>
+    
+                        <label for="song-file">Upload File:</label>
+                        <input type="file" id="song-file" name="song-file" required>
+    
+                        <button type="submit">Publish</button>
+                        <button type="button" class="cancel-btn">Cancel</button>
+                    </form>
+                </div>
+            </div>
+            <div class="dashboard-right">
+                <button class="distribution-btn">Distribution Management</button>
+                <div class="dashboard-balance-card">
+                    <h3>Account Balance</h3>
+                    <div class="balance-info">
+                        <input type="text" id="balance" value="$500.00" readonly>
+                        <button type="button" class="withdraw-btn">Withdraw</button>
+                    </div>
+                    <div class="revenue-graph">
+                        <h4>Revenue Graph</h4>
+                        <!-- Graph Image -->
+                        <img src="https://cdn.statcdn.com/Statistic/885000/886446-blank-754.png" alt="Revenue Graph">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- close dashboard -->
+
+    <!-- opening footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Get in Touch</h3>
+                <p>We would love to hear from you. Reach out to us via social media or contact us directly.</p>
+                <div class="socials">
+                    <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="contact-card">
+                    <h4>Email Us</h4>
+                    <p>contact@emusiccloud.com</p>
+                </div>
+                <div class="contact-card">
+                    <h4>Call Us</h4>
+                    <p>+94 123 456 789</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 e-Music Cloud. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- closing footer -->
+
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC - Library</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- open navbar -->
+
+    <header>
+        <a href="index.html" class="logo">e-Music Cloud</a>
+
+        <ul class="navbar">
+            <li><a href="epn.html">EPN</a></li>
+            <li><a href="discovery.html">eMusic Discovery</a></li>
+            <li><a href="library.html" class="active">my Library</a></li>
+            <li><a href="player.html">eM Player</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </header>
+
+    <!-- close navbar -->
+
+    <!-- open banner section -->
+
+    <section class="library-banner">
+        <div class="banner-content">
+            <h1>my Library</h1>
+        </div>
+    </section>
+
+    <!-- close banner section -->
+    
+    <!-- open library main section -->
+
+    <section class="library-content">
+        <div class="filters-column">
+            <h2>Sort & Filter</h2>
+            <div class="filters">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="artist">Artist</option>
+                    <option value="album">Album</option>
+                    <option value="genre">Genre</option>
+                    <option value="year">Year</option>
+                    <option value="source">Source</option>
+                </select>
+            </div>
+            <!-- Radio Section -->
+            <div class="radio-player">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqD21zcE11ZI_eFTEKKtxDc9N9cah6WqNi0b3bqrsHqT4P9zP-1pgMp94-1jUtEz6l0cQ&usqp=CAU" alt="Radio Thumbnail" class="radio-thumbnail">
+                <div class="radio-controls">
+                    <div class="fm-display">
+                        <span>FM 101.5</span>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="play-button">Play</button>
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                    </div>
+                </div>
+            </div>
+            <div class="radio-player">
+                <img src="https://yt3.googleusercontent.com/gFnNdBkWXw6011vwX18yIVfBaaOFgJ77HQobf2sIbFfnRkt5FzarlkHHrsrVdOMupLpz3UxqMQ=s900-c-k-c0x00ffffff-no-rj" alt="Radio Thumbnail" class="radio-thumbnail">
+                <div class="radio-controls">
+                    <div class="fm-display">
+                        <span>FM 106.2</span>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="play-button">Play</button>
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                    </div>
+                </div>
+            </div>
+            <div class="radio-player">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYe8_yy3YnwGvl42mgYPvtPLT5vwQ_J0KbUQ&s" alt="Radio Thumbnail" class="radio-thumbnail">
+                <div class="radio-controls">
+                    <div class="fm-display">
+                        <span>FM 98.8</span>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="play-button">Play</button>
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="items-column">
+            <!-- Example item -->
+            <div class="library-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e5a95573f1b91234630fd2cf" alt="Thumbnail">
+                <div class="item-details">
+                    <h3>Song Title</h3>
+                    <p>Artist Name</p>
+                    <p>Album Name</p>
+                    <div class="item-actions">
+                        <button class="preview-button">Preview</button>
+                        <button class="playlist-button">Add to Playlist</button>
+                        <button class="gift-button">Gift</button>
+                        <button class="find-music-button">Find Music Like This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="library-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d" alt="Thumbnail">
+                <div class="item-details">
+                    <h3>Song Title</h3>
+                    <p>Artist Name</p>
+                    <p>Album Name</p>
+                    <div class="item-actions">
+                        <button class="preview-button">Preview</button>
+                        <button class="playlist-button">Add to Playlist</button>
+                        <button class="gift-button">Gift</button>
+                        <button class="find-music-button">Find Music Like This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="library-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273b89cf022db28fa31376e0ed8" alt="Thumbnail">
+                <div class="item-details">
+                    <h3>Song Title</h3>
+                    <p>Artist Name</p>
+                    <p>Album Name</p>
+                    <div class="item-actions">
+                        <button class="preview-button">Preview</button>
+                        <button class="playlist-button">Add to Playlist</button>
+                        <button class="gift-button">Gift</button>
+                        <button class="find-music-button">Find Music Like This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="library-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvc7Xvz61UoKrEleM7KsdA-g9GJvHda6KVQQ&s" alt="Thumbnail">
+                <div class="item-details">
+                    <h3>Song Title</h3>
+                    <p>Artist Name</p>
+                    <p>Album Name</p>
+                    <div class="item-actions">
+                        <button class="preview-button">Preview</button>
+                        <button class="playlist-button">Add to Playlist</button>
+                        <button class="gift-button">Gift</button>
+                        <button class="find-music-button">Find Music Like This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="library-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44" alt="Thumbnail">
+                <div class="item-details">
+                    <h3>Song Title</h3>
+                    <p>Artist Name</p>
+                    <p>Album Name</p>
+                    <div class="item-actions">
+                        <button class="preview-button">Preview</button>
+                        <button class="playlist-button">Add to Playlist</button>
+                        <button class="gift-button">Gift</button>
+                        <button class="find-music-button">Find Music Like This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="library-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273495ce6da9aeb159e94eaa453" alt="Thumbnail">
+                <div class="item-details">
+                    <h3>Song Title</h3>
+                    <p>Artist Name</p>
+                    <p>Album Name</p>
+                    <div class="item-actions">
+                        <button class="preview-button">Preview</button>
+                        <button class="playlist-button">Add to Playlist</button>
+                        <button class="gift-button">Gift</button>
+                        <button class="find-music-button">Find Music Like This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="library-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2734782809e4cd19cefc99048f7" alt="Thumbnail">
+                <div class="item-details">
+                    <h3>Song Title</h3>
+                    <p>Artist Name</p>
+                    <p>Album Name</p>
+                    <div class="item-actions">
+                        <button class="preview-button">Preview</button>
+                        <button class="playlist-button">Add to Playlist</button>
+                        <button class="gift-button">Gift</button>
+                        <button class="find-music-button">Find Music Like This</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+
+    <!-- close library main section -->
+
+    <!-- opening footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Get in Touch</h3>
+                <p>We would love to hear from you. Reach out to us via social media or contact us directly.</p>
+                <div class="socials">
+                    <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="contact-card">
+                    <h4>Email Us</h4>
+                    <p>contact@emusiccloud.com</p>
+                </div>
+                <div class="contact-card">
+                    <h4>Call Us</h4>
+                    <p>+94 123 456 789</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 e-Music Cloud. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- closing footer -->
+
+
+</body>
+</html>

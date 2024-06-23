@@ -1,0 +1,1216 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 5px 100px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--red-color);
+    column-gap: 0.5rem;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 0.5rem 2rem;
+}
+
+.navbar a:hover{
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 5rem;
+    transition: background 0.5s;
+}
+
+/* Add the styles to highlight the active link */
+.navbar a.active {
+    background-color: black;
+    color: white;
+    border-radius: 5rem;
+}
+
+:root {
+    --red-color: #ff4b5c;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('images/homepagebg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--red-color);
+    border: none;
+    border-radius: 5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.popular-songs {
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.popular-songs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.song-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.song-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 15%;
+    transition: transform 0.3s;
+}
+
+.song-card:hover {
+    transform: translateY(-10px);
+}
+
+.song-card img {
+    width: 100%;
+    height: auto;
+}
+
+.song-details {
+    padding: 15px;
+}
+
+.song-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.song-details p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.navigate-site {
+    padding: 50px 100px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.navigate-site h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.navigate-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.nav-card a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+}
+
+.who-we-are {
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.who-we-are-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 45%;
+}
+
+.who-we-are-left h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.who-we-are-left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.who-we-are-right, .who-we-are-left {
+    height: 400px; /* Adjust the height as needed */
+}
+
+.who-we-are-right iframe {
+    border-radius: 10px;
+    height: 100%;
+}
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-left {
+    max-width: 45%;
+}
+
+.footer-left h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #ff4b5c;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 45%;
+}
+
+.contact-card {
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 100px 20px 100px;
+    text-align: center;
+}
+
+.contact-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 1.1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ========================================= EPN Page ========================================= */
+
+.epn-banner {
+    background: url('images/epnpagebanner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    margin-top: 60px; /* Adjust based on the height of your navbar */
+    position: relative;
+}
+
+.epn-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for overlay effect */
+    z-index: 1;
+}
+
+.epn-banner h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.epn-forms {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: #f9f9f9;
+}
+
+.form-container {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.form-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex: 1;
+}
+
+.form-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-card label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-card input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form-card button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #282c34;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-card button:hover {
+    background-color: #ff4b5c;
+}
+
+.dashboard {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.dashboard-content {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.dashboard-left, .dashboard-right {
+    width: 45%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.dashboard-upload-card, .dashboard-balance-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.dashboard-upload-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-upload-card label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.dashboard-upload-card input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.dashboard-upload-card button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #282c34;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.dashboard-upload-card .cancel-btn {
+    background-color: #ff4b5c;
+}
+
+.dashboard-upload-card button:hover {
+    background-color: #555;
+}
+
+.dashboard-upload-card .cancel-btn:hover {
+    background-color: #d43f4c;
+}
+
+.distribution-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #282c34;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.distribution-btn:hover {
+    background-color: #555;
+}
+
+.dashboard-balance-card {
+    padding: 20px;
+}
+
+.balance-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.balance-info input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    text-align: right;
+    background-color: #f5f5f5;
+}
+
+.withdraw-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff4b5c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.withdraw-btn:hover {
+    background-color: #d43f4c;
+}
+
+.revenue-graph {
+    margin-top: 20px;
+}
+
+.revenue-graph h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.revenue-graph img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* -------------------------------- Discovery Page -------------------------------- */
+
+/* e-Music Discovery Banner Section */
+.discovery-banner {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Adjust as needed */
+    background-image: url('images/discoverypagebanner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+.search-box {
+    width: 500px; /* Increased width */
+    padding: 15px; /* Increased padding */
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button i {
+    color: #333; /* Adjust icon color as needed */
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    background-color: #ff66cc; /* Pink color */
+    color: white;
+}
+
+.action-button:hover {
+    background-color: #ff3399; /* Darker pink on hover */
+}
+
+/* Rules & Regulations Section */
+.rules-regulations {
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+.rules-content {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.rules-left, .rules-right {
+    width: 45%;
+}
+
+.rules-left {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.rules-list {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.rules-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.rules-right .video-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.rules-right iframe {
+    border-radius: 10px;
+}
+
+/*--------------------------------------------- Library Page --------------------------------*/
+
+/* My Library Page Styles */
+
+/* Library Banner Section */
+.library-banner {
+    width: 100%;
+    height: 400px; /* Adjust height as needed for a mid-sized banner */
+    background-image: url('images/librarypagebannerr.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.library-banner .banner-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.library-banner h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Main Content Section */
+.library-content {
+    display: flex;
+    padding: 30px 100px;
+    background-color: #f9f9f9;
+}
+
+.filters-column {
+    width: 25%; /* Adjust width as needed */
+    padding-right: 20px;
+}
+
+.filters-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filters label {
+    font-size: 1rem;
+}
+
+.filters select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Radio Section within Filters Column */
+.radio-player {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.radio-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.radio-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fm-display {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff66cc; /* Pink color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #ff3399; /* Darker pink on hover */
+}
+
+.volume-slider {
+    width: 100px;
+}
+
+/* Library Items Section */
+.items-column {
+    width: 75%; /* Adjust width as needed */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.library-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Three items per row, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.library-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item-details {
+    margin-top: 15px;
+}
+
+.item-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff66cc; /* Pink color */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.item-actions button:hover {
+    background-color: #ff3399; /* Darker pink on hover */
+}
+
+/******************************** my Player Page ********************************/
+
+/* eM Player Page Styles */
+
+/* Player Banner Section */
+.player-banner {
+    width: 100%;
+    height: 400px; /* Adjusted height for a bigger banner */
+    background-image: url('images/playerbanner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-banner .banner-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.player-banner h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Main Player Section */
+.player-content {
+    display: flex;
+    justify-content: center;
+    padding: 30px 100px;
+    background-color: #f9f9f9;
+}
+
+.player-panel {
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.currently-playing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.song-thumbnail {
+    width: 200px; /* Increased width for a larger image */
+    height: 200px; /* Increased height for a larger image */
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.song-details {
+    font-size: 1rem;
+}
+
+.song-details h2 {
+    margin-bottom: 10px;
+}
+
+.play-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px; /* Adding space between buttons */
+}
+
+.play-controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea; /* New color for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.play-controls button:hover {
+    background-color: #3700b3; /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.seek-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.playlist-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlist-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.playlist-controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea; /* New color for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.playlist-controls button:hover {
+    background-color: #3700b3; /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.rating-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.additional-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.additional-options button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea; /* New color for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.additional-options button:hover {
+    background-color: #3700b3; /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Playlists Section Styles */
+.playlists-section {
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.playlists-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.playlist-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.playlist-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.playlist-name {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    background-color: #6200ea;
+    color: white;
+}
+
+.songs-list {
+    padding: 10px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.song-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.song-details {
+    flex-grow: 1;
+}
+
+.song-name {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.artist-name {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ============================================== Settings Page ================================= */
+
+/* Settings Page Styles */
+
+/* Settings Banner Section */
+.settings-banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('images/settingspagebanner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-banner .banner-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.settings-banner h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Settings Section */
+.settings-section {
+    display: flex;
+    padding: 30px 100px;
+    background-color: #f9f9f9;
+}
+
+/* Settings Container */
+.settings-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Navigation */
+.settings-sidebar {
+    width: 25%;
+    padding-right: 20px;
+}
+
+.settings-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-menu li {
+    margin-bottom: 10px;
+}
+
+.settings-menu a {
+    display: block;
+    padding: 10px;
+    background-color: #6200ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.settings-menu a:hover {
+    background-color: #3700b3;
+}
+
+/* Main Content Area */
+.settings-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Settings Card */
+.settings-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-card h2 {
+    margin-bottom: 20px;
+}
+
+.settings-card label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.settings-card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.settings-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.settings-card button:hover {
+    background-color: #3700b3;
+}

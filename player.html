@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC - Player</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- open navbar -->
+
+    <header>
+        <a href="index.html" class="logo">e-Music Cloud</a>
+
+        <ul class="navbar">
+            <li><a href="epn.html">EPN</a></li>
+            <li><a href="discovery.html">eMusic Discovery</a></li>
+            <li><a href="library.html">my Library</a></li>
+            <li><a href="player.html" class="active">eM Player</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </header>
+
+    <!-- close navbar -->
+
+    <!-- open banner -->
+
+    <section class="player-banner">
+        <div class="banner-content">
+            <h1>eM Player</h1>
+        </div>
+    </section>
+
+    <!-- close banner -->
+    
+    <!-- open music player section -->
+
+    <section class="player-content">
+        <div class="player-panel">
+            <!-- Currently Playing -->
+            <div class="currently-playing">
+                <img src="https://i.scdn.co/image/ab67616d0000b273f1115552efd25fa498ec923a" alt="Song Thumbnail" class="song-thumbnail">
+                <div class="song-details">
+                    <h2>Freaky Friday</h2>
+                    <p>Lil Dicky, Chris Brown</p>
+                    <p>(Single)</p>
+                </div>
+            </div>
+            <!-- Play Controls -->
+            <div class="play-controls">
+                <button class="play-button">Play</button>
+                <button class="pause-button">Pause</button>
+                <button class="next-button">Next</button>
+                <button class="prev-button">Previous</button>
+                <input type="range" class="seek-bar" min="0" max="100" value="0">
+            </div>
+            <!-- Playlist and Options -->
+            <div class="playlist-options">
+                <div class="playlist-controls">
+                    <button class="add-to-playlist-button">Add to Playlist</button>
+                    <button class="rate-song-button">Rate Song</button>
+                    <input type="number" class="rating-input" min="1" max="5" placeholder="Rate 1-5">
+                </div>
+                <div class="additional-options">
+                    <button class="find-music-button">Find Music Like This</button>
+                    <button class="gift-button">Gift</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- close music player section -->
+
+    <!-- open playlists section -->
+
+    <section class="playlists-section">
+        <h2 class="section-title">Playlists</h2>
+        <div class="playlists-container">
+            <!-- Playlist Card -->
+            <div class="playlist-card">
+                <img src="https://cdn.dribbble.com/users/5783048/screenshots/13902636/skull_doodle_4x.jpg" alt="Playlist Image" class="playlist-image">
+                <h3 class="playlist-name">low vib3</h3>
+                <div class="songs-list">
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732adb8804b550212b96023372" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Sans Toi</p>
+                            <p class="artist-name">Warren Saada</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2731f112b579e57350fd8e7ebc7" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Meet you at the Graveyard</p>
+                            <p class="artist-name">Cleffy</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a1ce8747837786900293efa0" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">No Wahala</p>
+                            <p class="artist-name">1d Banton</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273bd69bbde4aeee723d6d08058" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Ransom</p>
+                            <p class="artist-name">Lil Tecca</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ffb7a865712683e04881ab3b" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Merci Les Blues</p>
+                            <p class="artist-name">Kabongo-DJ</p>
+                        </div>
+                    </div>
+                    <!-- Repeat song-item div for more songs -->
+                </div>
+            </div>
+            <!-- Playlist Card -->
+            <div class="playlist-card">
+                <img src="https://assets.leparisien.fr/website/etudiant/evenements/photo_recto/2023/13/generation-90-2000-la-boum-90-2000-invitations-pour-les-filles-ete-2023-1.jpg" alt="Playlist Image" class="playlist-image">
+                <h3 class="playlist-name">the OG</h3>
+                <div class="songs-list">
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2737805aebd5a39023d553ada3a" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Domino</p>
+                            <p class="artist-name">Jessie J</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02937af329667311f4b2831616" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Firework</p>
+                            <p class="artist-name">Katy Perry</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273871d85943145dde548f4ae09" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Whistle</p>
+                            <p class="artist-name">Flo Rida</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ba30e4d27e93015180b4924d" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Trumpets</p>
+                            <p class="artist-name">Jason Derulo</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273159fb6de827383d5ff6a6247" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Last Friday Night</p>
+                            <p class="artist-name">Katy Perry</p>
+                        </div>
+                    </div>
+                    <!-- Repeat song-item div for more songs -->
+                </div>
+            </div>
+            <!-- Playlist Card -->
+            <div class="playlist-card">
+                <img src="https://cdn.dribbble.com/users/5783048/screenshots/13902636/skull_doodle_4x.jpg" alt="Playlist Image" class="playlist-image">
+                <h3 class="playlist-name">low vib3</h3>
+                <div class="songs-list">
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732adb8804b550212b96023372" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Sans Toi</p>
+                            <p class="artist-name">Warren Saada</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2731f112b579e57350fd8e7ebc7" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Meet you at the Graveyard</p>
+                            <p class="artist-name">Cleffy</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a1ce8747837786900293efa0" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">No Wahala</p>
+                            <p class="artist-name">1d Banton</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273bd69bbde4aeee723d6d08058" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Ransom</p>
+                            <p class="artist-name">Lil Tecca</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ffb7a865712683e04881ab3b" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Merci Les Blues</p>
+                            <p class="artist-name">Kabongo-DJ</p>
+                        </div>
+                    </div>
+                    <!-- Repeat song-item div for more songs -->
+                </div>
+            </div>
+            <!-- Playlist Card -->
+            <div class="playlist-card">
+                <img src="https://assets.leparisien.fr/website/etudiant/evenements/photo_recto/2023/13/generation-90-2000-la-boum-90-2000-invitations-pour-les-filles-ete-2023-1.jpg" alt="Playlist Image" class="playlist-image">
+                <h3 class="playlist-name">the OG</h3>
+                <div class="songs-list">
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2737805aebd5a39023d553ada3a" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Domino</p>
+                            <p class="artist-name">Jessie J</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02937af329667311f4b2831616" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Firework</p>
+                            <p class="artist-name">Katy Perry</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273871d85943145dde548f4ae09" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Whistle</p>
+                            <p class="artist-name">Flo Rida</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ba30e4d27e93015180b4924d" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Trumpets</p>
+                            <p class="artist-name">Jason Derulo</p>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273159fb6de827383d5ff6a6247" alt="Song Image" class="song-image">
+                        <div class="song-details">
+                            <p class="song-name">Last Friday Night</p>
+                            <p class="artist-name">Katy Perry</p>
+                        </div>
+                    </div>
+                    <!-- Repeat song-item div for more songs -->
+                </div>
+            </div>
+            <!-- Repeat playlist-card div for more playlists -->
+        </div>
+    </section>
+
+    <!-- close playlists section -->
+
+    <!-- opening footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Get in Touch</h3>
+                <p>We would love to hear from you. Reach out to us via social media or contact us directly.</p>
+                <div class="socials">
+                    <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="contact-card">
+                    <h4>Email Us</h4>
+                    <p>contact@emusiccloud.com</p>
+                </div>
+                <div class="contact-card">
+                    <h4>Call Us</h4>
+                    <p>+94 123 456 789</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 e-Music Cloud. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- closing footer -->
+
+
+</body>
+</html>
